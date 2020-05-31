@@ -1,5 +1,6 @@
 restpy/setup.json
 restpy/pytest.py
+restpy/Dockerfile
 restpy/httest.html
 restpy/standardpyfile.py
 node_modules
