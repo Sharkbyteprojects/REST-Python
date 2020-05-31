@@ -1,9 +1,11 @@
 const exec = require("child_process").exec;
 const ro = require("express").Router();
 const fs = require("fs");
-const list = JSON.parse(fs.readFileSync(__dirname + "/restpy/setup.json"));
+const filex=fs.readFileSync(__dirname + "/restpy/setup.json", 'utf-8');
+const list = JSON.parse(filex);
 module.exports = (app) => {
-  for (let x in list) {
+  list.forEach(x => {
+      console.log(x.path);
       ro.get(x.path,(req, res) => {
         const pythonfileUrl = __dirname + "/restpy/" + x.file;
           if (x.lang == "py") {
@@ -36,6 +38,6 @@ module.exports = (app) => {
             res.sendFile(pythonfileUrl);
         }
       });
-  }
+    });
   return ro;
 };
