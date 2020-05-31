@@ -1,0 +1,15 @@
+{
+  "name": "rest-python",
+  "version": "1.0.0",
+  "description": "Run python as rest webserver",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "shark"
+  ],
+  "author": "sharkbyteprojects",
+  "license": "ISC"
+}
