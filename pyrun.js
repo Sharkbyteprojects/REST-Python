@@ -21,7 +21,7 @@ module.exports = (app) => {
                 err(errr);
               }
               try {
-                ok({ stdout: JSON.parse(sto), stderr: JSON.parse(stderr) });
+                ok(JSON.parse(sto));
               } catch (e) {
                 err(e);
               }
