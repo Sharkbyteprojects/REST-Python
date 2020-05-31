@@ -1,5 +1,6 @@
 import sys
+import json
 #GET QUERY
-query=sys.argv[1]
+query=json.loads(sys.argv[1])
 #MY OWN CODE:
 print(query)

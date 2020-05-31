@@ -21,7 +21,7 @@ module.exports = (app) => {
                 err(errr);
               }
               try {
-                ok(sto);
+                ok(JSON.parse(sto));
               } catch (e) {
                 err(e);
               }
@@ -29,7 +29,7 @@ module.exports = (app) => {
           );
         }).then(
           (done) => {
-            res.send(done);
+            res.jsonp(done);
           },
           (errs) => {
             res.send("An error Occured:\n" + errs);
