@@ -1,4 +1,4 @@
-const exec = require("cild_process").exec;
+const exec = require("child_process").exec;
 const ro = require("express").Router();
 const fs = require("fs");
 const list = JSON.parse(fs.readFileSync(__dirname + "/restpy/setup.json"));
