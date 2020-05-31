@@ -5,6 +5,5 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 8080
-RUN chmod 777 .
 WORKDIR /usr/src/app/restpy
 #CMD ./run.sh
