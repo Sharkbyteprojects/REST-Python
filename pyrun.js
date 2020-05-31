@@ -15,7 +15,7 @@ module.exports = (app) => {
             "RUN " + `python3 ${pythonfileUrl} ${JSON.stringify(jfile)}`
           );
           exec(
-            `python3 ${pythonfileUrl} '${JSON.stringify(jfile)}'`,
+            `python3 ${pythonfileUrl} ${JSON.stringify(jfile)}`,
             (errr, sto, sterr) => {
               if (errr) {
                 err(errr);
