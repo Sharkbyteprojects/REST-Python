@@ -3,4 +3,4 @@ import json
 #GET QUERY
 query=json.loads(sys.argv[1])
 #MY OWN CODE:
-print(query)
+print(query["hi"])
