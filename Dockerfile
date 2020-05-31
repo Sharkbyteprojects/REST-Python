@@ -1,6 +1,6 @@
 FROM alpine:3.7
 WORKDIR /usr/src/app
-RUN apk add nodejs python3 npm
+RUN apk add nodejs python3
 COPY package*.json ./
 RUN npm install
 COPY . .
