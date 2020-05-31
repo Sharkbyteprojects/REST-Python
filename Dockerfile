@@ -8,4 +8,5 @@ RUN adduser node -g noadmin -D
 USER node
 COPY . .
 EXPOSE 8080
-#CMD ["npm", "start"]
+WORKDIR /usr/src/app/restpy
+#CMD ./run.sh
