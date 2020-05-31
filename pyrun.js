@@ -12,7 +12,7 @@ module.exports = (app) => {
         const jfile = JSON.stringify(req.query);
         new Promise((ok, err) => {
           console.log(
-            "RUN " + `python3 ${pythonfileUrl} '${JSON.stringify(jfile)}'`
+            "RUN " + `python3 ${pythonfileUrl} ${JSON.stringify(jfile)}`
           );
           exec(
             `python3 ${pythonfileUrl} '${JSON.stringify(jfile)}'`,
