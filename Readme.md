@@ -1,3 +1,4 @@
-# Currently in dev
+# REST4PYTHON
+[ON DOCKER HUB](https://hub.docker.com/r/shark2byte/rest4python)
 
-CURRENTLY ONLY GET
+We working on a Post API
