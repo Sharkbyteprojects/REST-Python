@@ -68,5 +68,9 @@ to access the query via
 ## Example
 You find a Example in this Repos in the folder `restpy`
 
+## WHAT IF IT NOT WORK?
+
+If the dockerfile work not, use `git clone https://github.com/Sharkbyteprojects/REST-Python.git` to clone the repos, change the files in the folder `restpy` and start with NODE JS `npm start` in the main folder of the repos
+
 ## What the Dev's do in the Future:
 - We working on a Post API
